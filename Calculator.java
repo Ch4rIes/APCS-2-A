@@ -1,3 +1,6 @@
+//NAME: CHARLES ZUO
+//DATE: SEPT 29th
+//PROBLEM SET: 2-A
 
 public class Calculator {
     public double slope(double x1 , double x2 , double y1 , double y2){
@@ -7,14 +10,14 @@ public class Calculator {
         // y_diff represents y coordinate's difference
         double x_diff = x2 - x1;
         // x_diff represents x coordinate's difference
-        // the slope is y_diff / x_diff
+        // slope = y_diff / x_diff
         return y_diff / x_diff;
     }
     public double quadratic_formula_adding(double a , double b , double c){
         // a is the coefficient of X^2
         // b is the coefficient of X
         // c is the coefficient of 1
-        // to calculate the roots we use the quadratic formula
+        // to calculate the roots we use the quadratic formula: (-b +- sqrt(b^2 - 4ac)) / 2a
         double r1 = (((-b + Math.sqrt(b * b - 4 * a * c)) / 2 / a));
         return r1;
     }
@@ -22,7 +25,7 @@ public class Calculator {
         // a is the coefficient of X^2
         // b is the coefficient of X
         // c is the coefficient of 1
-        // to calculate the roots we use the quadratic formula
+        // to calculate the roots we use the quadratic formula: (-b +- sqrt(b^2 - 4ac)) / 2a
         double r2 = (((-b - Math.sqrt(b * b - 4 * a * c)) / 2 / a));
         return r2;
     }
@@ -44,6 +47,7 @@ public class Calculator {
         // f is the first term of the arithmetic series
         // diff is the difference between terms
         // k is the number of terms in the series
+        //Formula (ai + an) * n / 2
         double sum = ((f + f + (k - 1) * diff) * k / 2);
         // the "sum" is the sum of the arithmetic series
         return sum;
@@ -52,6 +56,7 @@ public class Calculator {
         // g1 is the first term of the geometric series
         // r is the rate of change between terms
         // k is the number of cases we will calculate sum
+        //Formula g1 * (1 - rk) / (1 - r)
         double sum = g1 * (1 - Math.pow(r , k)) / (1 - r);
         // the "sum" is the sum of the geometric series
         return sum;
